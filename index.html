@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindNaukri</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Animate on scroll css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- fontaweesome -->
+    <script src="https://kit.fontawesome.com/616d889ddf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Navbar -->
+        <nav class="grid-col-2">
+            <div class="logoDiv">
+                <p class="logo">Goind</p>
+                <i class="fa-solid fa-bars" id="bar" onclick="openMenu()"></i>
+            </div>
+            <div class="menuDiv">
+                <ul class="desktopMenu">
+                    <li><a href="">Search Jobs</a></li>
+                    <li><a href="">Recruiters</a></li>
+                    <li><a href="">Companies</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">More</a></li>
+                    <li><a href="" class="login">Login Here</a></li>
+                </ul>
+            </div>
+
+            <!-- mobile menu -->
+            <div class="mobileMenuDiv" id="mobileMenu">
+                <ul class="desktopMenu">
+                    <li id="cross" ><a href="javascript:void(0)" onclick="closeMenu()">&#215;</a></li>
+                    <li><a href="" class="login">Login Here</a></li>
+                    <li><a href="">Search Jobs</a></li>
+                    <li><a href="">Recruiters</a></li>
+                    <li><a href="">Companies</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">More</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <header>
+            <div class="overlay"></div>
+            <h1>Best Naukri Search here</h1>
+            <div class="inputDiv">
+                <input type="text" name="searchJob" id="searchJob" placeholder="Search Jobs">
+                <input type="submit" value="Search" class="btn">
+            </div>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</p>
+            <a href="" class="btn"> Discover More</a>
+        </header>
+
+        <!-- Marketing Jobs -->
+        <section class="grid-col-2 marketing section-mg jobSection" data-aos="fade-right">
+            <div class="jobInfoDiv">
+                <h2>Marketing jobs</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there</p>
+                <a href="" class="btn">Apply Now</a>
+            </div>
+            <div class="imgDiv">
+                <figure>
+                    <img src="/images/marketing.jpg" alt="marketing">
+                </figure>
+            </div>
+        </section>
+
+        <!-- Industrial Jobs -->
+        <section class="grid-col-2 marketing section-mg jobSection specialClass" data-aos="fade-left">
+            <div class="imgDiv">
+                <figure >
+                    <img src="/images/industrial.jpg" alt="marketing">
+                </figure>
+            </div>
+            <div class="jobInfoDivTwo">
+                <h2>Industrial jobs</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there</p>
+                <a href="" class="btn">Apply Now</a>
+            </div>
+            
+        </section>
+
+        <!-- Corporate Jobs -->
+        <section class="grid-col-2 marketing section-mg jobSection" data-aos="fade-right">
+            <div class="jobInfoDiv">
+                <h2>Corporate jobs</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there</p>
+                <a href="" class="btn">Apply Now</a>
+            </div>
+            <div class="imgDiv">
+                <figure>
+                    <img src="/images/cooparate.jpg" alt="marketing">
+                </figure>
+            </div>
+        </section>
+
+        <!-- Government Jobs -->
+        <section class="grid-col-2 marketing section-mg jobSection specialClass" data-aos="fade-left">
+            <div class="imgDiv">
+                <figure>
+                    <img src="/images/government.jpg" alt="marketing">
+                </figure>
+            </div>
+            <div class="jobInfoDivTwo">
+                <h2>Government jobs</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there</p>
+                <a href="" class="btn">Apply Now</a>
+            </div>
+            
+        </section>
+
+        <!-- Footer -->
+        <footer class="section-mg">
+            <div class="subscribe ">
+                <h2>Subscribe Now</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi tenetur voluptas tempora consectetur vitae!</p>
+                <div class="subscribeInput">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+            <div class="copyright grid-col-2">
+                <div>
+                    <p>© 2019 All Rights Reserved. Free html Templates</p>
+                </div>
+                <div>
+                    <p>Cookies, Privacy and Terms
+                    </p>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+
+    <script src="/script/index.js"></script>
+
+    <!-- Anmate on scroll script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 120,
+        duration:500,
+      });
+    </script>
+</body>
+</html>

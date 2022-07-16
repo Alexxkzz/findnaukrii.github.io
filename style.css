@@ -1,0 +1,710 @@
+/* Fonts */
+@font-face {
+    font-family: poppinsRegular;
+    src: url(./fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppinsBold;
+    src: url(./fonts/Poppins/Poppins-Bold.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden; 
+}
+body{
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+a,p,h1,h2,h3,h4,h5{
+    font-family: poppinsRegular;
+}
+
+figure{
+    height: 100%;
+    width: 100%;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/* variables */
+:root{
+    --btn-bg-color: #252525;
+    --btn-color: #ffffff;
+    --overlay-bg-color:#47c5f3;
+}
+/* Reusable classes */
+.btn{
+    background-color: var(--btn-bg-color);
+    color: var(--btn-color);
+    padding: .7rem 3rem;
+    font-size: 1rem;
+}
+
+.section-mg{
+    margin-top: 3rem;
+}
+.grid-col-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* navbar */
+nav{
+    padding: 1rem 2rem;
+    grid-template-columns: 30% 1fr !important;
+
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-top: .5rem;  
+}
+nav ul li a{
+    color: #858686;
+    font-size: 1rem;
+    margin-right: 1.5rem;
+    
+}
+nav ul li a:hover{
+    color: #1898b8;
+}
+.login{
+    color: #1898b8;
+}
+.logoDiv p{
+    font-family: poppinsBold;
+    font-size: 2.2rem;
+    color: #2ca6d1;
+}
+/* mobile menu */
+i{
+    display: none !important;
+}
+.mobileMenuDiv{
+    display: none;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(./images/heroSectionImage.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    padding: 6rem 0;
+    z-index: -5;
+}
+header h1{
+    font-size: 5rem;
+    color: #ffffff;
+    margin: 1rem 0;
+}
+.inputDiv{
+    width: 70%;
+    text-align: center;
+    margin: 1rem 0;
+}
+.inputDiv input[type="text"]{
+    width: 75%;
+    padding-top: 1rem ;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    color: #858686;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border: none;
+}
+.inputDiv input[type="Submit"]{
+   padding: 1rem 0;
+    width: 20%;
+    border:none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+header p{
+    font-size: 1rem;
+    color: #ffffff;
+    max-width: 80%;
+    margin: 1.5rem 0;
+}
+.overlay{
+    background-color: var(--overlay-bg-color);
+    opacity: .6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Marketing */
+.jobInfoDiv{
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+.jobInfoDiv h2{
+    font-size: 3.1rem;
+}
+.jobInfoDiv p{
+    max-width: 80%;
+    margin: 2rem 0;
+    line-height: 2.2rem;
+}
+.jobInfoDivTwo{
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+}
+.jobInfoDivTwo h2{
+    font-size: 3.1rem;
+}
+.jobInfoDivTwo p{
+    max-width: 80%;
+    margin: 2rem 0;
+    line-height: 2.2rem;
+}
+.imgDiv{
+    box-shadow: 10px 10px 15px 10px rgba(243,242,242,0.71) ,-10px -10px 15px 10px rgba(243,242,242,0.71);
+}
+
+/* footer */
+footer{
+    background-color: #00aeef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.subscribe{
+    text-align: left;
+    flex-direction: column;
+    width:70%;
+}
+.subscribe h2{
+    font-size: 1.9rem;
+    color: #ffffff;
+    margin: 1rem 0;
+}
+.subscribe p{
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 1rem 0;
+}
+.subscribeInput{
+    background-color: #ffffff;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    margin-bottom: 3rem;
+}
+.subscribeInput input[type="email"]{
+    width: 77%;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    padding: 1rem 0;
+    padding-left: 2rem;
+    border: none;
+    font-size: 1rem;
+    margin: .2rem;
+    background-color: #ffffff;
+}
+.subscribeInput input[type="submit"]{
+    background-color: var(--btn-bg-color);
+    color: #ffffff;
+    width: 20%;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    padding: 1rem 0;
+    border: none;
+    font-size: 1rem;
+    margin: .2rem;
+}
+.copyright{
+    padding: 1.5rem 0;
+    background-color: #ffffff;
+    width: 100%;
+}
+.copyright div{
+    text-align: center;
+}
+.copyright div p{
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 1300px) {
+    
+}
+@media (max-width: 1200px) {
+    /* navbar */
+    nav ul li a {
+        font-size: .9rem;
+        margin-right: 1.2rem;
+    }
+
+
+    /* Sections */
+    .jobInfoDiv h2{
+        font-size: 2.8rem;
+    }
+    .jobInfoDivTwo h2{
+        font-size: 2.8rem;
+    }
+    .jobInfoDiv p{
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+    .jobInfoDivTwo p{
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 1100px) {
+    /* navbar */
+     nav ul li a {
+        font-size: .9rem;
+        margin-right: 1.2rem;
+    }
+
+    /* Sections */
+    .jobInfoDiv h2{
+        font-size: 2.6rem;
+    }
+    .jobInfoDivTwo h2{
+        font-size: 2.6rem;
+    }
+    .jobInfoDiv p{
+        line-height: 1.9rem;
+        font-size: 1rem;
+        margin: .5rem 0;
+    }
+    .jobInfoDivTwo p{
+        line-height: 1.9rem;
+        font-size: 1rem;
+        margin: .5rem 0;
+    }
+}
+@media (max-width: 1000px) {
+    /* Reusable classes */
+    .btn{
+        font-size: .8rem;
+    }
+
+    /* navbar */
+    nav ul li a {
+        font-size: .8rem;
+        margin-right: 1.2rem;
+    }
+
+    /* header */
+    header h1 {
+        font-size: 4rem;
+    }
+    header p {
+        font-size: .8rem;
+    }
+
+    /* Sections */
+    .jobInfoDiv h2{
+        font-size: 2.4rem;
+    }
+    .jobInfoDivTwo h2{
+        font-size: 2.4rem;
+    }
+    .jobInfoDiv p{
+        line-height: 1.8rem;
+        font-size: .9rem;
+        margin: .4rem 0;
+    }
+    .jobInfoDivTwo p{
+        line-height: 1.8rem;
+        font-size: .9rem;
+        margin: .4rem 0;
+    }
+
+    /* footer */
+    .copyright div p {
+        font-size: .9rem;
+    }
+    
+}
+@media (max-width: 900px) {
+
+    /* header */
+    header h1 {
+        font-size: 3rem;
+    }
+    header p {
+        font-size: .7rem;
+    }
+
+    /* Sections */
+    .jobInfoDiv h2{
+        font-size: 2.2rem;
+    }
+    .jobInfoDivTwo h2{
+        font-size: 2.2rem;
+    }
+    .jobInfoDiv p{
+        line-height: 1.6rem;
+        font-size: .8rem;
+        margin: .4rem 0;
+    }
+    
+    .jobInfoDivTwo p{
+        line-height: 1.6rem;
+        font-size: .8rem;
+        margin: .4rem 0;
+    }
+    
+}
+@media (max-width: 800px) {
+    /* navbar */
+    .logoDiv p {
+        font-size: 1.8rem;
+    }
+    nav ul li a {
+        font-size: .7rem;
+        margin-right: 1.2rem;
+    }
+    nav {
+        padding: .8rem 2rem;
+        grid-template-columns: 25% 1fr !important;
+    }
+    /* footer */
+    .subscribe h2 {
+        font-size: 1.5rem;
+    }
+    .subscribe p {
+        font-size: .8rem;
+    }
+    .subscribeInput input[type="email"] {
+        width: 74%;
+        font-size: .8rem;
+    }
+    .subscribeInput input[type="submit"] {
+        font-size: .8rem;
+    }
+    .copyright div p {
+        font-size: .7rem;
+    }
+}
+@media (max-width: 700px) {
+    /* menuDiv */
+    .menuDiv {
+        display: none;
+    }
+    nav{
+        grid-template-columns: 1fr !important;
+    }
+    i{
+        display: block !important;
+        text-align: right;
+        padding-top: .5rem;
+        font-size: 1.5rem;
+        color: #2ca6d1;
+    }
+    .mobileMenuDiv{
+        z-index: 100;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 0;
+        overflow-x: hidden;
+        background-color: #ffffff;
+        transition: all .4s linear;
+    }
+    .mobileMenuDiv ul li{
+        display: block;
+        text-align: center;
+        margin: 1.5rem 0;
+        font-size: .8rem;
+        border-bottom: 1px solid #858686;
+        padding-bottom: 1rem;
+    }
+    #cross{
+        text-align:right;
+    }
+    #cross a{
+        font-size: 2.3rem;
+    }
+        
+    
+    .logoDiv{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    /* header */
+    header{
+        padding: 3rem 0;
+    }
+    header h1 {
+        font-size: 2.5rem;
+    }
+    header p {
+        font-size: .6rem;
+    }
+
+    /* Sections */
+    .jobInfoDiv h2{
+        font-size: 1.8rem;
+    }
+    .jobInfoDivTwo h2{
+        font-size: 1.8rem;
+    }
+    .jobInfoDiv p{
+        line-height: 1.4rem;
+        font-size: .7rem;
+        margin: .5rem 0;
+    }
+    
+    .jobInfoDivTwo p{
+        line-height: 1.4rem;
+        font-size: .7rem;
+        margin: .5rem 0;
+    }
+}
+@media (max-width: 600px) {
+    /* Sections */
+    .jobInfoDiv h2{
+        font-size: 1.5rem;
+    }
+    .jobInfoDivTwo h2{
+        font-size: 1.5rem;
+    }
+    .jobInfoDiv p{
+        line-height: 1.2rem;
+        font-size: .6rem;
+        margin: .5rem 0;
+    }
+    
+    .jobInfoDivTwo p{
+        line-height: 1.2rem;
+        font-size: .6rem;
+        margin: .5rem 0;
+    }
+
+      
+    /* footer */
+      .subscribe h2 {
+        font-size: 1.3rem;
+    }
+    .subscribe p {
+        font-size: .7rem;
+    }
+    .subscribeInput input[type="email"] {
+        width: 74%;
+        font-size: .7rem;
+    }
+    .subscribeInput input[type="submit"] {
+        font-size: .7rem;
+    }
+    .copyright div p {
+        font-size: .6rem;
+    }
+}
+@media (max-width: 500px) {
+    /* Reusable classes */
+    .grid-col-2{
+        grid-template-columns: 1fr;
+    }
+    .btn {
+        font-size: .7rem;
+    }
+    /* Sections */
+    .jobInfoDiv h2{
+        font-size: 1.3rem;
+    }
+    .jobInfoDivTwo h2{
+        font-size: 1.3rem;
+    }
+    .jobInfoDiv p{
+        line-height: 1.1rem;
+        font-size: .6rem;
+        margin: .5rem 0;
+    }
+    
+    .jobInfoDivTwo p{
+        line-height: 1.1rem;
+        font-size: .6rem;
+        margin: .5rem 0;
+    }
+    .jobSection{
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    
+    .jobInfoDivTwo{
+        width: 80%;
+        text-align: right;
+        margin-bottom: 2rem;
+        padding-right: 2rem;
+    }
+    .imgDiv{
+        width: 100%;
+        text-align: center;
+    }
+    .jobInfoDiv{
+        width: 80%;
+        text-align: left;
+        margin-bottom: 2rem;
+        padding-left: 2rem;
+    }
+    .specialClass{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    /* header */
+    header{
+        padding: 3rem 0;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: .6rem;
+    }
+}
+@media (max-width: 400px) {
+    /* reusable classes */
+    .btn{
+        font-size: .6rem;
+    }
+    /* navbar */
+    .logoDiv p {
+        font-size: 1.5rem;
+    }
+    /* header */
+    header{
+        padding: 3rem 0;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    .inputDiv input[type="text"],
+    .inputDiv input[type="submit"]{
+        font-size: .6rem;
+    }
+
+    /* Sections */
+    .jobInfoDiv h2{
+        font-size: 1.3rem;
+    }
+    .jobInfoDivTwo h2{
+        font-size: 1.3rem;
+    }
+    .jobInfoDiv p{
+        font-size: .7rem;
+        max-width: 100%;
+    }
+    
+    .jobInfoDivTwo p{
+        font-size: .7rem;
+        max-width: 100%;
+    }
+
+    /* footer */
+    .subscribe h2 {
+        font-size: 1rem;
+    }
+    .subscribe p {
+        font-size: .6rem;
+    }
+    .subscribeInput input[type="email"] {
+        width: 70%;
+        font-size: .6rem;
+    }
+    .subscribeInput input[type="submit"] {
+        font-size: .6rem;
+    }
+    .copyright div p {
+        font-size: .5rem;
+    }
+}
+@media (max-width: 300px) {
+    /* reusable classes */
+    .btn{
+        padding: 0.6rem 1rem;
+    }
+    /* navbar */
+    .logoDiv p {
+        font-size: 1.2rem;
+    }
+    i{
+        font-size: 1.2rem;
+        padding-top: .2rem;
+    }
+    nav {
+        padding: 0.8rem 1rem;
+    }
+    /* header */
+    header{
+        padding: 3rem 0;
+    }
+    header h1 {
+        font-size: 1rem;
+    }
+
+    /* sections */
+    .jobInfoDivTwo h2 {
+        font-size: 1rem;
+    }
+    .jobInfoDivTwo p {
+        font-size: .6rem;
+        line-height: 1rem;
+    }
+    .jobInfoDiv h1{
+        font-size: 1rem;
+    }
+    .jobInfoDiv p{
+        font-size: .6rem;
+        line-height: 1rem;
+    }
+
+    /* footer */
+    .subscribeInput input[type="email"] {
+        width: 65%;
+        font-size: .5rem;
+        padding: .5rem 1rem;
+    }
+    .subscribeInput input[type="submit"] {
+        font-size: .5rem;
+        padding: .5rem 0;
+    }
+}
+@media (max-width: 200px) {
+    
+}
